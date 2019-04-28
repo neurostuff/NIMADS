@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "schema": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "nimads": "http://neurostuff.org/nimads/"
+  },
+  "@graph": [
+    {
+      "@id": "nimads:Image",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A NIMADS Image",
+      "rdfs:label": "Image",
+      "rdfs:subClassOf": {
+        "@id": "schema:Thing"
+      }
+    },
+    {
+      "@id": "nimads:image",
+      "schema:rangeIncludes": {
+        "@id": "nimads:Image"
+      }
+    },
+    {
+      "@id": "nimads:space",
+      "schema:domainIncludes": {
+        "@id": "nimads:Image"
+      }
+    },
+    {
+      "@id": "nimads:path",
+      "schema:domainIncludes": {
+        "@id": "nimads:Image"
+      }
+    },
+    {
+      "@id": "nimads:valueType",
+      "schema:domainIncludes": {
+        "@id": "nimads:Image"
+      }
+    }
+  ]
+}
