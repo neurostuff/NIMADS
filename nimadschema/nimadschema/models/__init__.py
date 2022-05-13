@@ -1,4 +1,4 @@
-from .nimads import (
+from ._nimads import (
     Studyset,
     Annotation,
     NoteCollection,
