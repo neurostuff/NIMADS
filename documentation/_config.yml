@@ -44,11 +44,13 @@ sphinx:
     autodoc_pydantic_model_summary_list_order: bysource
     autodoc_pydantic_model_member_order: bysource
     autodoc_pydantic_model_signature_prefix: object
-    autodoc_pydantic_model_undoc_members: false
+    autodoc_pydantic_model_undoc_members: true
     autodoc_pydantic_model_show_json: false
     autodoc_pydantic_field_show_default: false
+    autodoc_pydantic_model_members: true
     autosummary_generate: true
     add_module_names: false
+    templates_path: ['_custom_templates', '/home/jdkent/projects/NIMADS/.nimads/lib64/python3.8/site-packages/sphinx_book_theme/_templates']
     html_extra_path:
       - schema
     suppress_warnings:
