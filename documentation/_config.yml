@@ -39,6 +39,7 @@ sphinx:
    - sphinxcontrib.autodoc_pydantic
    - sphinx.ext.napoleon
   config:
+    html_theme: sphinx_book_theme
     autodoc_member_order: 'bysource'
     autodoc_pydantic_model_show_field_summary: false
     autodoc_pydantic_model_summary_list_order: bysource
@@ -50,7 +51,8 @@ sphinx:
     autodoc_pydantic_model_members: true
     autosummary_generate: true
     add_module_names: false
-    templates_path: ['_custom_templates', '/home/jdkent/projects/NIMADS/.nimads/lib64/python3.8/site-packages/sphinx_book_theme/_templates']
+    # templates_path: ['_custom_templates', '/home/jdkent/projects/NIMADS/.nimads/lib64/python3.8/site-packages/sphinx_book_theme/_templates']
+    templates_path: ['_custom_templates']
     html_extra_path:
       - schema
     suppress_warnings:

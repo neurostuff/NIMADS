@@ -1,3 +1,4 @@
 jupyter-book
 autodoc_pydantic
 ./nimadschema
+sphinx-pythia-theme

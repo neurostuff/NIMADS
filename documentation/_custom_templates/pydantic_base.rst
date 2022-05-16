@@ -4,3 +4,4 @@
 
 .. auto{{ objtype }}:: {{ objname }}
    :inherited-members: BaseModel
+   :members:
