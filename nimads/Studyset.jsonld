@@ -7,10 +7,10 @@
   },
   "@graph": [
     {
-      "@id": "nimads:Dataset",
+      "@id": "nimads:Studyset",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A NIMADS Dataset",
-      "rdfs:label": "Dataset",
+      "rdfs:comment": "A NIMADS Studyset",
+      "rdfs:label": "Studyset",
       "rdfs:subClassOf": {
         "@id": "schema:Thing"
       }
@@ -18,7 +18,7 @@
     {
       "@id": "nimads:study",
       "schema:domainIncludes": {
-        "@id": "nimads:Dataset"
+        "@id": "nimads:Studyset"
       }
     }
   ]

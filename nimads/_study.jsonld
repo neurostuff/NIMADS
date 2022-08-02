@@ -10,7 +10,7 @@
   "rdfs:label": "study",
   "domainIncludes": [
     {
-      "@id": "nimads:Dataset"
+      "@id": "nimads:Studyset"
     }
   ],
   "rangeIncludes": [
