@@ -1,5 +1,5 @@
 {
-  "Dataset": {
+  "Studyset": {
     "properties": [
       ["study", "nimads:Study"]
     ]
