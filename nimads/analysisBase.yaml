@@ -1,0 +1,19 @@
+title: analysisBase
+x-stoplight:
+  id: ijr77s889p38a
+type: object
+properties:
+  name:
+    type: string
+    example: '"houses>faces"'
+    description: A name of the contrast being performed.
+    nullable: true
+  description:
+    type: string
+    description: A long form description of how the contrast was performed
+    nullable: true
+  weights:
+    type: array
+    description: 'Weight applied to each condition, must be the same length as the conditions attribute.'
+    items:
+      type: number

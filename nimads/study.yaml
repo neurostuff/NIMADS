@@ -1,0 +1,7 @@
+title: study
+x-stoplight:
+  id: 7eodaichj4hpq
+allOf:
+  - $ref: ./studyBase.yaml
+  - $ref: ./studyRelationships.yaml
+description: A publishable unit of research.

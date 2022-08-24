@@ -1,0 +1,22 @@
+title: pointRelationships
+x-stoplight:
+  id: uc0ogrf5u336b
+type: object
+properties:
+  image:
+    nullable: true
+    oneOf:
+      - $ref: ./image.yaml
+      - type: string
+        nullable: true
+    description: Statistical image the point was derived from. Either points to an image object or a string linking to an image object.
+  values:
+    type: array
+    description: 'An array of values at this point since each value could represent a beta, t-statistic and/or z-statistic, etc.'
+    items:
+      $ref: ./pointValue.yaml
+  analysis:
+    oneOf:
+      - $ref: ./analysis.yaml
+      - type: string
+    description: 'Analysis the point is associated with. Each point is associated with one and only one analysis, but an analysis can have multiple points. Either an analysis object or a string linking to an analysis object.'

@@ -1,0 +1,14 @@
+title: studysetRelationship
+x-stoplight:
+  id: 42ej1aku5dxf5
+type: object
+properties:
+  studies:
+    type: array
+    description: The collection of studies.
+    items:
+      oneOf:
+        - $ref: ./study.yaml
+        - type: string
+          description: The id or uri indicating the location of the study.
+      description: 'Studies can either be presented in their full nested representation, or simply as a string referencing the location of the study.'

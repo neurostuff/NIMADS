@@ -1,0 +1,10 @@
+title: imageRelationships
+x-stoplight:
+  id: 8ijdpuyz8m2nr
+type: object
+properties:
+  analysis:
+    oneOf:
+      - $ref: ./analysis.yaml
+      - type: string
+    description: 'Analysis the image is associated with. Each image is associated with one and only one analysis, but an analysis can have multiple images. Either an analysis object or a string linking to an analysis object.'

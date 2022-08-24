@@ -1,0 +1,15 @@
+title: annotationRelationships
+x-stoplight:
+  id: 25qke5pi9s7et
+type: object
+properties:
+  studyset:
+    oneOf:
+      - $ref: ./studyset.yaml
+      - type: string
+    description: 'The studyset the annotation is associated with. Each annotation is associated with one and only one studyset, but a studyset can have multiple annotations. The representation can either be a studyset object or a string indicating the location to find the studyset object.'
+  notes:
+    type: array
+    description: The collection of notes for each analysis within the studyset. Each analysis will have all note_keys with the appropriately typed values.
+    items:
+      $ref: ./noteCollection.yaml

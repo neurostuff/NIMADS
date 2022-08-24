@@ -1,0 +1,5 @@
+title: condition
+x-stoplight:
+  id: m99oo4pzi4745
+allOf:
+  - $ref: ./conditionBase.yaml

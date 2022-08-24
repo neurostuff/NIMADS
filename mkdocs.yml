@@ -1,0 +1,16 @@
+site_name: Neurosynth-Compose Documentation
+repo_url: https://github.com/neurostuff/NIMADS
+site_url: https://neurostuff.github.io/NIMADS/
+theme: material
+markdown_extensions:
+  - admonition
+nav:
+    - Home: index.md
+    - Glossary of Terms:
+      - Studyset: studyset.html
+      - Annotation: annotation.html
+      - Study: study.html
+      - Analysis: analysis.html
+      - Condition: condition.html
+      - Point: point.html
+      - Image: image.html

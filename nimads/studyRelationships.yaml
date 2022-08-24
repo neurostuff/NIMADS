@@ -1,0 +1,12 @@
+title: studyRelationships
+x-stoplight:
+  id: 8231qsr91am19
+type: object
+properties:
+  analyses:
+    type: array
+    description: 'The analyses making up the study. A study can have one or more analyses, since each analysis represents a contrast of conditions, where psychological, behavioral, pharmacological, or group based. Either represented as an analysis object or a string pointing to the location of the analysis object.'
+    items:
+      oneOf:
+        - $ref: ./analysis.yaml
+        - type: string

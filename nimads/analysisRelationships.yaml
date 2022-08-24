@@ -1,0 +1,31 @@
+title: analysisRelationships
+x-stoplight:
+  id: 2f2z4bv0h9mqy
+type: object
+properties:
+  conditions:
+    description: 'Array of conditions (e.g., 2-back, memory, etc.) that must be the same length as the weights attribute. Either is an array of condition objects or strings that point to condition objects.'
+    type: array
+    items:
+      oneOf:
+        - $ref: ./condition.yaml
+        - type: string
+  images:
+    type: array
+    description: 'Statistical images (e.g., beta, t-statistic, and/or z-statistic images) where each voxel gets a value. Either represented as an array of image objects or strings linking to image objects.'
+    items:
+      oneOf:
+        - $ref: ./image.yaml
+        - type: string
+  points:
+    type: array
+    description: Coordinates of significance associated with the contrast. Either an array of point objects or an array of strings linking to point objects.
+    items:
+      oneOf:
+        - $ref: ./point.yaml
+        - type: string
+  study:
+    oneOf:
+      - $ref: ./study.yaml
+      - type: string
+    description: 'The study this analysis is associated with. Each analysis can only be associated to one and only one study, but a study can have multiple analyses.'
