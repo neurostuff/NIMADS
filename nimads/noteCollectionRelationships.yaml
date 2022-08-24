@@ -1,0 +1,15 @@
+title: noteCollectionRelationships
+x-stoplight:
+  id: 1yd3fan1mcjhw
+type: object
+properties:
+  analysis:
+    oneOf:
+      - $ref: ./analysis.yaml
+      - type: string
+    description: The analysis the note collection is associated with. Either represented as an analysis object or a string pointing to the location of the analysis object.
+  annotation:
+    oneOf:
+      - $ref: ./annotation.yaml
+      - type: string
+    description: The annotation this collection of notes is associated with. Either represented as an annotation object or a string pointing to the location of the annotation object.

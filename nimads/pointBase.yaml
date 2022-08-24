@@ -1,0 +1,27 @@
+title: pointBase
+x-stoplight:
+  id: 3lk7bkg1b20eu
+type: object
+properties:
+  coordinates:
+    type: array
+    minItems: 3
+    maxItems: 3
+    description: Location of the significant coordinate in three dimensional space.
+    items:
+      type: number
+      format: float
+      example: 63
+  space:
+    type: string
+    example: MNI
+    description: Template space used to determine coordinate Examples include TAL or MNI.
+    nullable: true
+  kind:
+    type: string
+    description: 'Method of how point was derived (e.g., center of mass)'
+    nullable: true
+  label_id:
+    type: string
+    description: 'If the point is associated with an image, this is the value the point takes in that image.'
+    nullable: true

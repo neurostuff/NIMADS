@@ -1,0 +1,7 @@
+title: analysis
+x-stoplight:
+  id: v3tekc9f48itl
+allOf:
+  - $ref: ./analysisBase.yaml
+  - $ref: ./analysisRelationships.yaml
+description: A contrast of weighted conditions with associated statistical results.

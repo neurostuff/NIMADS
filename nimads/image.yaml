@@ -1,0 +1,7 @@
+title: image
+x-stoplight:
+  id: p2egesdkd01q5
+allOf:
+  - $ref: ./imageBase.yaml
+  - $ref: ./imageRelationships.yaml
+description: A description of a brain image linking to the actual nifti file.

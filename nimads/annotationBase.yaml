@@ -1,0 +1,23 @@
+title: annotationBase
+x-stoplight:
+  id: elhp55f53a6en
+type: object
+properties:
+  name:
+    type: string
+    description: Descriptive name for the annotation.
+    nullable: true
+  description:
+    type: string
+    description: Long form description of the annotation.
+    nullable: true
+  metadata:
+    type: object
+    description: 'object describing metadata about the annotation, such as software used or descriptions of the keys used in the annotation.'
+    nullable: true
+  note_keys:
+    type: object
+    description: The keys (columns) in the annotation and the key's respective type.
+    example:
+      include: boolean
+    nullable: true

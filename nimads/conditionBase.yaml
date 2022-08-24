@@ -1,0 +1,13 @@
+title: conditionBase
+x-stoplight:
+  id: gj3bgwj49nnvn
+type: object
+properties:
+  name:
+    type: string
+    description: 'Name of the condition being applied in the contrast, either psychological, pharmacological, or group based.'
+    nullable: true
+  description:
+    type: string
+    description: Long form description of how the condition is operationalized and/or specific meaning.
+    nullable: true

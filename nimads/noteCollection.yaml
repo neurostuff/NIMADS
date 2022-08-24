@@ -1,0 +1,6 @@
+title: noteCollection
+x-stoplight:
+  id: 5uno9u26cfi05
+allOf:
+  - $ref: ./noteCollectionBase.yaml
+  - $ref: ./noteCollectionRelationships.yaml

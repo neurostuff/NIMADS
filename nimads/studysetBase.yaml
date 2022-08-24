@@ -1,0 +1,25 @@
+title: studysetBase.yml
+x-stoplight:
+  id: niubjaxnfshgl
+type: object
+properties:
+  name:
+    type: string
+    description: Descriptive and human readable name of the studyset.
+    nullable: true
+  description:
+    type: string
+    description: A longform description of the studyset.
+    nullable: true
+  publication:
+    type: string
+    description: The journal/source the studyset is connected to if the studyset was published.
+    nullable: true
+  doi:
+    type: string
+    description: A DOI connected to the published studyset (may change to being automatically created so each studyset connected to a successful meta-analysis gets a DOI).
+    nullable: true
+  pmid:
+    type: string
+    description: 'If the article connected to the studyset was published on PubMed, then link the ID here.'
+    nullable: true

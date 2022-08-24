@@ -1,0 +1,41 @@
+title: studyBase
+x-stoplight:
+  id: sri328mpyfw8o
+type: object
+properties:
+  doi:
+    type: string
+    example: 10.1016/S0926-6410(97)00020-7
+    description: Digital object identifier of the study.
+    nullable: true
+  name:
+    type: string
+    example: 'Functional magnetic resonance imaging of category-specific cortical activation: evidence for semantic maps.'
+    description: Title of the study.
+    nullable: true
+  metadata:
+    description: Metadata associated with the study not covered by the other study attributes.
+    type: object
+    nullable: true
+  description:
+    type: string
+    description: 'Long form description of the study, typically the abstract.'
+    example: This is my very scientific abstract.
+    nullable: true
+  publication:
+    type: string
+    description: The journal/place of publication for the study.
+    example: Journal of Super Important Science.
+    nullable: true
+  pmid:
+    type: string
+    description: 'If the study was published on PubMed, place the PubMed ID here.'
+    nullable: true
+  authors:
+    type: string
+    description: The authors on the publication of this study.
+    nullable: true
+  year:
+    type: integer
+    description: The year this study was published.
+    nullable: true

@@ -1,0 +1,36 @@
+title: imageBase
+x-stoplight:
+  id: lpuzyjm8yyx2f
+type: object
+properties:
+  metadata:
+    type: object
+    description: Metadata about image such as software and version used and other relevant data about how the image was produced.
+    nullable: true
+  url:
+    type: string
+    format: uri
+    example: 'https://neurovault.org/media/images/4778/Positive_RPEs_zstat.nii.gz'
+    description: URL to image file.
+    nullable: true
+  filename:
+    type: string
+    example: Positive_RPEs_zstat.nii.gz
+    description: Name of the image file.
+    nullable: true
+  space:
+    type: string
+    example: MNI152NLin2009aAsym
+    description: 'The template space the image is in (e.g., MNI '
+    nullable: true
+  value_type:
+    type: string
+    example: Z
+    description: 'The values the image represents. For example, T-statistic or Z-statistic, or Betas.'
+    nullable: true
+  add_date:
+    type: string
+    format: date-time
+    description: Date the image was added.
+    nullable: true
+    readOnly: true

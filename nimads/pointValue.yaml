@@ -1,0 +1,7 @@
+title: pointValue
+x-stoplight:
+  id: 868iz44gn6dr7
+type: object
+properties:
+  id:
+    type: string
