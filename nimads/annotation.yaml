@@ -4,3 +4,4 @@ x-stoplight:
 allOf:
   - $ref: ./annotationBase.yaml
   - $ref: ./annotationRelationships.yaml
+description: an annotation describes each analysis within a studyset with typically subjective information pertinant to the analysis (like inclusion/exclusion criteria) as opposed to an immutable attribute about the analysis (like sample size).

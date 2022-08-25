@@ -5,3 +5,4 @@ allOf:
   - $ref: ./studysetBase.yaml
   - $ref: ./studysetRelationships.yaml
 description: 'A collection of studies (e.g., publications).'
+examples: []

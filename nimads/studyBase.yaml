@@ -31,11 +31,16 @@ properties:
     type: string
     description: 'If the study was published on PubMed, place the PubMed ID here.'
     nullable: true
+    example: '35998675'
   authors:
     type: string
     description: The authors on the publication of this study.
     nullable: true
+    example: 'Strange, M.'
   year:
     type: integer
     description: The year this study was published.
     nullable: true
+    example: 1991
+    minimum: 0
+    maximum: 9999

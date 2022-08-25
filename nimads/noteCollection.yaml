@@ -4,3 +4,4 @@ x-stoplight:
 allOf:
   - $ref: ./noteCollectionBase.yaml
   - $ref: ./noteCollectionRelationships.yaml
+description: The storage object for all notes within an annotation for a single analysis.

@@ -7,7 +7,9 @@ properties:
     type: string
     description: 'Name of the condition being applied in the contrast, either psychological, pharmacological, or group based.'
     nullable: true
+    example: 1-back
   description:
     type: string
     description: Long form description of how the condition is operationalized and/or specific meaning.
     nullable: true
+    example: 'the 1-back represents the condition where the the previous stimulus is compared the the current stimulus '

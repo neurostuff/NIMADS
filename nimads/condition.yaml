@@ -3,3 +3,4 @@ x-stoplight:
   id: m99oo4pzi4745
 allOf:
   - $ref: ./conditionBase.yaml
+description: 'A representative term for a psychological, pharmacological, medical, or physical state.'
