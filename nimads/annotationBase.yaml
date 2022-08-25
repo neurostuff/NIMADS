@@ -7,17 +7,19 @@ properties:
     type: string
     description: Descriptive name for the annotation.
     nullable: true
+    example: Examination of left versus right finger tapping
   description:
     type: string
     description: Long form description of the annotation.
     nullable: true
+    example: 'This annotation tracks whether the analysis of interest for all included studies are left handed/right handed, or bimanual taps.'
   metadata:
     type: object
     description: 'object describing metadata about the annotation, such as software used or descriptions of the keys used in the annotation.'
     nullable: true
   note_keys:
     type: object
-    description: The keys (columns) in the annotation and the key's respective type.
+    description: The keys (columns) in the annotation and the key's respective data type (such as an integer or string).
     example:
       include: boolean
     nullable: true

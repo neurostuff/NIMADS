@@ -4,4 +4,4 @@ x-stoplight:
 allOf:
   - $ref: ./imageBase.yaml
   - $ref: ./imageRelationships.yaml
-description: A description of a brain image linking to the actual nifti file.
+description: A description of a brain image linking to the actual nifti file (typically on neurovault).

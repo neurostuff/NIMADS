@@ -12,8 +12,10 @@ properties:
     type: string
     description: A long form description of how the contrast was performed
     nullable: true
+    example: This analysis represents a contrast of houses versus faces.
   weights:
     type: array
     description: 'Weight applied to each condition, must be the same length as the conditions attribute.'
     items:
       type: number
+      example: 1

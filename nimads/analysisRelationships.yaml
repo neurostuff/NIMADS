@@ -10,6 +10,7 @@ properties:
       oneOf:
         - $ref: ./condition.yaml
         - type: string
+          example: 123456789abc
   images:
     type: array
     description: 'Statistical images (e.g., beta, t-statistic, and/or z-statistic images) where each voxel gets a value. Either represented as an array of image objects or strings linking to image objects.'
@@ -17,6 +18,7 @@ properties:
       oneOf:
         - $ref: ./image.yaml
         - type: string
+          example: 123456789abc
   points:
     type: array
     description: Coordinates of significance associated with the contrast. Either an array of point objects or an array of strings linking to point objects.
@@ -24,8 +26,10 @@ properties:
       oneOf:
         - $ref: ./point.yaml
         - type: string
+          example: 123456789abc
   study:
     oneOf:
       - $ref: ./study.yaml
       - type: string
+        example: 123456789abc
     description: 'The study this analysis is associated with. Each analysis can only be associated to one and only one study, but a study can have multiple analyses.'

@@ -7,19 +7,24 @@ properties:
     type: string
     description: Descriptive and human readable name of the studyset.
     nullable: true
+    example: Examination of want versus need
   description:
     type: string
     description: A longform description of the studyset.
     nullable: true
+    example: 'A collection of studies that include tasks x, y, and z, for the purpose of teasing apart concepts a and b.'
   publication:
     type: string
     description: The journal/source the studyset is connected to if the studyset was published.
     nullable: true
+    example: Journal of Open Results
   doi:
     type: string
     description: A DOI connected to the published studyset (may change to being automatically created so each studyset connected to a successful meta-analysis gets a DOI).
     nullable: true
+    example: digital object identifier of the studyset
   pmid:
     type: string
     description: 'If the article connected to the studyset was published on PubMed, then link the ID here.'
     nullable: true
+    example: '35998675'

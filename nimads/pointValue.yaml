@@ -3,5 +3,13 @@ x-stoplight:
   id: 868iz44gn6dr7
 type: object
 properties:
-  id:
+  kind:
     type: string
+    description: 'The kind of statistic the value represents, whether it is variance, beta, t-statistic, or z-statistic.'
+    nullable: true
+    example: Z
+  value:
+    type: number
+    description: The value of the point for the "kind" of statistic.
+    nullable: true
+    example: 3.1
