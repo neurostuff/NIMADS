@@ -1,0 +1,42 @@
+name: Push changes to neurostore-spec
+
+on:
+  push:
+    branches:
+      - '**'
+      - '!gh-pages'
+jobs:
+  update_specification:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout Specification
+        uses: actions/checkout@v3
+        with:
+          repository: neurostuff/neurostore-spec
+          submodules: true
+          token: ${{ secrets.ADMIN_PAT }}
+      - name: Change/Create branch
+        run: |
+          git fetch
+          git ls-remote --exit-code --heads origin  ${{ github.ref_name }} || git branch ${{ github.ref_name }}
+          git checkout ${{ github.ref_name }}
+      - name: Checkout nimads
+        uses: actions/checkout@v3
+        with:
+          path: nimads
+      - name: Update specification
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          # check to see if there were any changes to the repository and no branches made
+          if [ -z $(git diff --submodule) ]; then
+            echo "no new changes in nimads"
+            if [ -z "$(git ls-remote --heads origin ${{ github.ref_name }})" ]; then
+              git push -q https://github.com/neurostuff/neurostore-spec.git ${{ github.ref_name }}
+            else
+              echo "branch already exists and is up to date"
+            fi
+          else
+            git commit -m "${{ github.sha }}" -a
+            git push -q https://github.com/neurostuff/neurostore-spec.git ${{ github.ref_name }}
+          fi
