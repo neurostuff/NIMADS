@@ -1,3 +1,3 @@
-# NeuroImaing Meta Analysis Data Structure (NIMADS)
+# NeuroImaging Meta Analysis Data Structure (NIMADS)
 
 
