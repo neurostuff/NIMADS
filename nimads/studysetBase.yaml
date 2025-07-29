@@ -2,6 +2,8 @@ title: studysetBase.yml
 x-stoplight:
   id: niubjaxnfshgl
 type: object
+required:
+  - name
 properties:
   name:
     type: string
