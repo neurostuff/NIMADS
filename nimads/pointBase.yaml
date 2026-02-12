@@ -10,6 +10,7 @@ properties:
     description: Location of the significant coordinate in three dimensional space.
     items:
       type: number
+      nullable: true
       format: float
       example: 63
   space:
