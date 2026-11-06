@@ -19,7 +19,7 @@ properties:
     nullable: true
   note_keys:
     type: object
-    description: The keys (columns) in the annotation and the key's respective data type (such as an integer or string).
+    description: "The keys (columns) in the annotation and each key's type: string, number, boolean, or array (a list of strings)."
     example:
       include: boolean
     nullable: true
